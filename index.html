@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        // sass는 중괄호 없음
+        // scss는 중괄호 있음
+
+        //sass --watch -E -utf-8 scss/style.scss:css/style.css
+        //sass --watch -E utf-8 scss/style.scss:css/style.css
+
+        /*
+        git init
+        git remote add origin https://github.com/BB2e/scss-.git
+        */
+    -->
+    <!-- 
+        절차 지향 코드의 불편한 점
+        - 여러개의 컴포넌트 기능을 만들때 
+        반복적으로 실행되는 공통의 기능들까지 일일히 코드 작업을 해야함
+        - 해결방법: 이벤트 + 함수 형태로 반복되는 공통의 기능을 
+        함수로 패키징해서 필요할떄마다 재호출 해야함 
+
+        이벤트 + 함수 코드 형태의 불편하넘
+        - 함수로 패키징된 기능 자체는 재활용 가능하나
+        해당함수를 반복적으로 호출하는 선택자와 이벤트 바인딩 구문을 계쏙 생성해야함
+        - 이벤트 걸어주는 선택자를 전역변수를 담을때마다 전역변수가 오염됨
+        
+        => prototype 기반의 객체지향형 프로그래밍 방식으로 해결
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>
