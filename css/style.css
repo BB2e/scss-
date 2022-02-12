@@ -1,7 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 ul, ol, li {
   list-style: none; }
@@ -9,10 +8,42 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
-div {
-  width: 200px;
-  height: 200px;
-  background-color: aqua;
-  margin: 50px; }
+#tab1 {
+  width: 600px;
+  margin: 100px auto;
+  border: 1px solid #777; }
+  #tab1 ul {
+    width: 100%; }
+    #tab1 ul::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #tab1 ul li {
+      width: 200px;
+      height: 40px;
+      float: left;
+      font: bold 18px/40px 'arial';
+      text-align: center;
+      background: #555;
+      color: #bbb;
+      cursor: pointer; }
+      #tab1 ul li.on {
+        background: #fff;
+        color: #333; }
+  #tab1 section {
+    width: 100%;
+    position: relative; }
+    #tab1 section article {
+      width: 100%;
+      height: 100%;
+      font: bold 20px/200px 'arial';
+      color: #333;
+      text-align: center;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      #tab1 section article.on {
+        display: block; }
 
 /*# sourceMappingURL=style.css.map */
